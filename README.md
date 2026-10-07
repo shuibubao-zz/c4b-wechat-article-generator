@@ -51,7 +51,10 @@ C4B/
     ├── mine_same_input.html            定制版（库路径）
     ├── mine_zero_dep.html              定制版（零依赖路径，与上一份字节一致）
     ├── article_convert_report.json     真实文章的转换与自检报告
-    └── skill安装验证.txt               解包副本上独立运行的验证
+    ├── skill安装验证.txt               解包副本上独立运行的验证
+    ├── submit_guard_audit.txt              提交前体检报告（交付物 / 命名 / 红线 / 五维粗估）
+    ├── 审计说明_命名与空文件.md              命名规范适用对象、自指假异常说明
+    └── 官方打包器输出_wechat-publisher.zip   官方打包器重打的技能包（17 个条目）
 ```
 
 ### 对应挑战的必交文件

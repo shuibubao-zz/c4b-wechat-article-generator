@@ -196,4 +196,7 @@ starter 用了 `nl2br` 扩展，它会把源码里一次换行渲染成两个 `<
 | `evidence/mine_same_input.html` / `mine_zero_dep.html` | 定制版两条路径输出（字节一致） |
 | `evidence/article_convert_report.json` | 真实文章的转换与自检报告（4742 字 / 1 图） |
 | `evidence/skill安装验证.txt` | 解包副本上独立运行验证 |
+| `evidence/submit_guard_audit.txt` | 提交前体检报告（交付物核对 / 命名 / 红线 / 五维粗估；工具自述为机器粗估，非官方评分） |
+| `evidence/审计说明_命名与空文件.md` | 对体检报告两个自指假异常的说明（命名规范适用对象、「有深度」信号震荡） |
+| `evidence/官方打包器输出_wechat-publisher.zip` | 官方打包器重打的技能包（17 个条目，含全部 `scripts/`） |
 | 线上链接 | https://wechat-article-layout-38529.app.workbuddy.host/ |
