@@ -1,0 +1,22 @@
+{
+  "source": "卢怡然_C4B_文章源文件.md",
+  "output": "卢怡然_C4B_output.html",
+  "engine": "markdown-lib",
+  "theme": "accent",
+  "warnings": [],
+  "check": {
+    "ok": true,
+    "errors": [],
+    "warnings": [],
+    "stats": {
+      "chars": 4742,
+      "images": 1,
+      "h2": 14,
+      "h3": 0,
+      "p": 66,
+      "tables": 2,
+      "links": 0,
+      "code_blocks": 75
+    }
+  }
+}

@@ -1,0 +1,20 @@
+# .skill 安装验证（解包副本上真跑）
+
+打包：卢怡然_C4B_wechat-publisher.skill（17 个文件，48,786 字节，zip，SKILL.md 在根）
+新增：scripts/math_render.py（数学公式渲染，2026-10-07 轮）
+解包到：C:/Users/Public/c4b_install_test（纯 ASCII 路径，模拟换一台机器）
+
+$ python scripts/selftest.py
+  -> 自检结果：20/20 通过（含公式 4 项：渲染/降级、双引擎一致、代码区 $ 不误伤、--math off）
+
+$ python scripts/convert_to_wechat.py 卢怡然_C4B_文章源文件.md install_test_out.html
+  -> 解析引擎：markdown-lib　主题：accent
+  -> 合规自检：通过
+  -> 统计：4742 字 / 图 1 张 / h2 14 / 表格 2（与源目录内运行结果一致）
+
+一致性校验：
+  - 包内 17 个文件 vs 源码目录逐文件 sha256 比对：全部一致（无漂移）
+  - 解包副本转换产物 vs 源目录转换产物 sha256：一致（12e105d4f8956007…）
+
+另：官方 skill-creator 打包器（package_skill.py）通过校验的产物留档在
+evidence/官方打包器输出_wechat-publisher.zip（该产物内带 wechat-publisher/ 前缀目录）。

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>样例：把一篇 Markdown 变成公众号文章</title>
+</head>
+<body style="max-width: 620px; margin: 0 auto; padding: 24px 16px; background-color: #ffffff; font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', sans-serif;">
+<!-- 复制方式：浏览器打开本文件 → Ctrl+A → Ctrl+C → 粘贴到公众号编辑器（mp.weixin.qq.com） -->
+<h2 style="font-size: 24px; font-weight: bold; line-height: 1.4; color: #1f2328; margin: 0 0 10px 0;">样例：把一篇 Markdown 变成公众号文章</h2>
+<p style="font-size: 13px; color: #9a9a9a; margin: 0 0 18px 0;">卢怡然 · 2026-10-06 · 约 1 分钟读完</p>
+<p style="font-size: 14px; line-height: 1.7; color: #666; background-color: #f7f8fa; padding: 12px 14px; margin: 0 0 20px 0;">这个样例演示 front-matter、callout 框、目录、表格、代码块与图片内嵌的实际效果。</p>
+<p style="font-size: 16px; font-weight: bold; color: #1f2328; margin: 20px 0 8px 0;">目录</p>
+<p style="font-size: 15px; color: #333; margin: 4px 0;">1. 开篇：为什么要样例</p>
+<p style="font-size: 15px; color: #333; margin: 4px 0;">2. 一、元数据与目录</p>
+<p style="font-size: 15px; color: #333; margin: 4px 0;">3. 二、 callout 高亮框</p>
+<p style="font-size: 15px; color: #333; margin: 4px 0;">4. 三、列表与表格</p>
+<p style="font-size: 15px; color: #333; margin: 4px 0;">5. 四、代码与图片</p>
+<p style="font-size: 15px; color: #333; margin: 4px 0;">6. 五、结尾</p>
+<h2 style="font-size: 22px; font-weight: bold; line-height: 1.6; color: #1a73e8; margin: 26px 0 12px 0;">开篇：为什么要样例</h2>
+<p style="font-size: 16px; line-height: 1.75; color: #333; margin: 12px 0;">样例文件的价值在于——它能一次性暴露转换器的全部行为。改一行源码，跑一遍样例，<br>对照输出就能看出退化在哪里。</p>
+<h2 style="font-size: 22px; font-weight: bold; line-height: 1.6; color: #1a73e8; margin: 26px 0 12px 0;">一、元数据与目录</h2>
+<p style="font-size: 16px; line-height: 1.75; color: #333; margin: 12px 0;">上面的标题、作者、日期、摘要都来自 front-matter ；下面的目录是转换器从标题里自动抽取的。</p>
+<p style="background-color: #f0f7ff; border-left: 4px solid #3b82f6; font-size: 15px; line-height: 1.75; color: #333; padding: 14px; margin: 18px 0;"><span style="font-weight: bold; color: #3b82f6;">📘 目录是纯文本</span><br>公众号不支持页内锚点，所以目录不跳转，只做索引。</p>
+<h2 style="font-size: 22px; font-weight: bold; line-height: 1.6; color: #1a73e8; margin: 26px 0 12px 0;">二、 callout 高亮框</h2>
+<p style="background-color: #fff8e6; border-left: 4px solid #f59e0b; font-size: 15px; line-height: 1.75; color: #333; padding: 14px; margin: 18px 0;"><span style="font-weight: bold; color: #f59e0b;">⚠️ 两个引用块之间要空一行</span><br>否则会被合并成一个块，这是 Markdown 的通用行为。</p>
+<h2 style="font-size: 22px; font-weight: bold; line-height: 1.6; color: #1a73e8; margin: 26px 0 12px 0;">三、列表与表格</h2>
+<ul style="margin: 12px 0; padding-left: 22px;"><li style="font-size: 16px; line-height: 1.75; color: #333; margin: 6px 0;">无序项 A</li><li style="font-size: 16px; line-height: 1.75; color: #333; margin: 6px 0;">无序项 B<br><ul style="margin: 12px 0; padding-left: 22px;"><li style="font-size: 16px; line-height: 1.75; color: #333; margin: 6px 0;">子项 B1 （缩进 4 空格）</li></ul></li></ul>
+<ol style="margin: 12px 0; padding-left: 22px;"><li style="font-size: 16px; line-height: 1.75; color: #333; margin: 6px 0;">有序项一</li><li style="font-size: 16px; line-height: 1.75; color: #333; margin: 6px 0;">有序项二</li></ol>
+<table style="border-collapse: collapse; margin: 14px 0; font-size: 14px;"><tr><th style="background-color: #e8f2ff; color: #1a73e8; font-weight: bold; padding: 8px 10px; text-align: left; border: 1px solid #cfe3ff;">能力</th><th style="background-color: #e8f2ff; color: #1a73e8; font-weight: bold; padding: 8px 10px; text-align: left; border: 1px solid #cfe3ff;">starter kit</th><th style="background-color: #e8f2ff; color: #1a73e8; font-weight: bold; padding: 8px 10px; text-align: left; border: 1px solid #cfe3ff;">定制版</th></tr><tr><td style="padding: 8px 10px; border: 1px solid #d0d7de; color: #333;">主题</td><td style="padding: 8px 10px; border: 1px solid #d0d7de; color: #333;">无</td><td style="padding: 8px 10px; border: 1px solid #d0d7de; color: #333;">4 套</td></tr><tr><td style="padding: 8px 10px; border: 1px solid #d0d7de; color: #333;">callout</td><td style="padding: 8px 10px; border: 1px solid #d0d7de; color: #333;">无</td><td style="padding: 8px 10px; border: 1px solid #d0d7de; color: #333;">5 种</td></tr><tr><td style="padding: 8px 10px; border: 1px solid #d0d7de; color: #333;">合规自检</td><td style="padding: 8px 10px; border: 1px solid #d0d7de; color: #333;">无</td><td style="padding: 8px 10px; border: 1px solid #d0d7de; color: #333;">自动</td></tr></table>
+<h2 style="font-size: 22px; font-weight: bold; line-height: 1.6; color: #1a73e8; margin: 26px 0 12px 0;">四、代码与图片</h2>
+<p style="background-color: #f6f8fa; color: #24292e; font-size: 14px; line-height: 1.65; padding: 14px 16px; margin: 14px 0; white-space: pre-wrap;">def convert(src, dst):<br>&nbsp;&nbsp;&nbsp;&nbsp;return dst<br></p>
+<p style="font-size: 16px; line-height: 1.75; color: #333; margin: 12px 0;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z8BQDwAEhQGAhKmMIQAAAABJRU5ErkJggg==" alt="这是会被内嵌的 1x1 PNG" style="max-width: 100%; margin: 14px 0;" /></p>
+<h2 style="font-size: 22px; font-weight: bold; line-height: 1.6; color: #1a73e8; margin: 26px 0 12px 0;">五、结尾</h2>
+<p style="font-size: 16px; line-height: 1.75; color: #333; margin: 12px 0;">正文里还有 <span style="font-weight: bold;">加粗</span>、<span style="background-color: #f2f4f7; color: #c0341d; font-size: 14px; padding: 2px 4px;">行内代码</span>、==高亮== 和 <a href="https://example.com" style="color: #1a73e8; text-decoration: underline;">外链</a>（公众号里通常不可点，建议放文末）。</p>
+<p style="font-size: 13px; line-height: 1.8; color: #9a9a9a; background-color: #fafafa; padding: 12px 14px; margin: 30px 0 10px 0;">本文为原创内容，作者 卢怡然。欢迎转发分享，转载请注明出处。</p>
+</body>
+</html>

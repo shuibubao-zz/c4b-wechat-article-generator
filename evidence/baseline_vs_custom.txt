@@ -1,0 +1,23 @@
+# starter 基线 vs 定制版：同一输入的实测对比
+
+输入：_starter/c4b-wechat-publisher-starter/examples/sample_article.md
+
+指标              baseline_starter_output       mine_same_input         mine_zero_dep
+输出字节                              9403                 10320                 10320
+带 style 的元素                         75                    82                    82
+h2                                   3                     3                     3
+p                                   10                    12                    12
+h1/div                               0                     0                     0
+class/id                             0                     0                     0
+中英空格处                               28                    30                    30
+
+说明：
+  baseline_starter_output = starter kit 原样输出
+  mine_same_input         = 定制版（markdown 库路径，依赖齐全）
+  mine_zero_dep           = 定制版（屏蔽 markdown/bs4，走零依赖路径）
+
+两条引擎路径输出字节一致：True
+  markdown 库路径 sha256: 1e506b85cffe6993ae50f63c0dedc9c5a53baf75597d502d75cc43c151681d55
+  零依赖路径     sha256: 1e506b85cffe6993ae50f63c0dedc9c5a53baf75597d502d75cc43c151681d55
+
+差异说明：定制版多出的元素来自元数据行、摘要框、页脚版权（starter 没有这三项）。
